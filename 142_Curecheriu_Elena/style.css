@@ -1,0 +1,106 @@
+
+
+.container div
+{
+    width: 80px;
+    padding: 23px;
+    text-align: center;
+    background-color:plum;
+    border-width: 4px;
+    border: dotted darkmagenta;
+    margin: 5px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#box1
+{
+    height: 80px;
+    width: 80px;
+}
+
+#box2, #box3, #box4
+{
+    margin-left: 65px;
+    width: 20px;
+}
+
+#box5
+{
+    margin-left: 65px;
+    width: 100px;
+}
+
+#box6
+{
+    margin-left: 65px;
+    width: 20px;
+}
+
+#box7
+{
+    margin-left: 65px;
+    translate: 80px -75px;
+    width: 20px;
+}
+
+#circle
+{
+    border-radius: 50%;
+    padding: auto;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    border: solid white;
+    background-color: white;
+    position: center;
+    align-self: center;
+    justify-content: center;
+    animation: size 0.33s hover;
+}
+
+@keyframes size {
+    0% {
+        width: 20px;
+        height: 20px;
+        background-color: darkmagenta;
+    }
+    50% {
+        width: 15px;
+        height: 15px;
+        background-color: darkmagenta;
+    }
+    100% {
+        width: 5px;
+        height: 5px;
+        background-color: darkmagenta;
+    }
+}
+#circle:hover {
+    background-color: darkmagenta;
+    transform: scale(0.25);
+    transition: transform 0.33s;
+}
+
+@media screen and (min-width: 300px) and (max-width: 500px) {
+    .container div {
+        width: 100%;
+        padding: 10px;
+        background-color: plum;
+        border: dotted darkmagenta;
+        margin: 5px;
+        display: block;
+    }
+    #box1, #box2, #box3, #box4, #box5, #box6{
+        width: 80px;
+        margin-left: 0;
+    }
+    #box7 
+    {
+        width: 80px;
+        margin-left: 0;
+        translate: 0;
+    }
+}
